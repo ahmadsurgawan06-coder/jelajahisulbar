@@ -1,0 +1,101 @@
+
+:root {
+  --warna-utama: #0d6efd;
+  --warna-gelap: #152238;
+  --warna-latar: #f5f8fc;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--warna-latar);
+  color: #263238;
+  line-height: 1.7;
+}
+
+.navbar-brand {
+  letter-spacing: 0.4px;
+}
+
+.hero {
+  min-height: 75vh;
+  background:
+    linear-gradient(rgba(10, 25, 45, 0.65), rgba(10, 25, 45, 0.65)),
+    url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=80")
+    center/cover no-repeat;
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.profile-box,
+.login-box {
+  background: #fff;
+  padding: 35px;
+  border-radius: 18px;
+}
+
+.profile-box {
+  max-width: 650px;
+}
+
+.login-box {
+  max-width: 460px;
+}
+
+.profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--warna-utama);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.footer {
+  background: var(--warna-gelap);
+  color: white;
+  margin-top: 25px;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .profile-box,
+  .login-box {
+    padding: 24px;
+  }
+}
